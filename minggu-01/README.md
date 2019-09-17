@@ -13,12 +13,15 @@ membuat repo
 ![cek versi](./04.PNG)
 
 clone repo
+
 ![clone repo](./07.png)
 
 Me-push perubahan ke github
+
 ![push](./09.png)
 
 Melihat repository github online
+
 ![melihat](./10.png)
 
 
