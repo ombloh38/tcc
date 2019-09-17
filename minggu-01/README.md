@@ -16,10 +16,10 @@ clone repo
 ![clone repo](./07.png)
 
 Me-push perubahan ke github
-![push](./08.png)
+![push](./09.png)
 
 Melihat repository github online
-
+![melihat](./10.png)
 
 
 
