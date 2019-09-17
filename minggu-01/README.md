@@ -13,19 +13,13 @@ membuat repo
 ![cek versi](./04.PNG)
 
 clone repo
-
-
-buat folder
-
-buat file
-
-menambahkan file ke stagging
-
-Commit perubahan staging
+![clone repo](./07.png)
 
 Me-push perubahan ke github
+![push](./08.png)
 
 Melihat repository github online
+
 
 
 
