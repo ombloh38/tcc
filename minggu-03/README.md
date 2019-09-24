@@ -4,7 +4,7 @@ FAUZAN HADISURYO
 
 Pertama clone github kita
 kemudian membuat folder minggu-03
-![pertama](./1.PNG)
+![pertama](./1.png)
 
 ## SAS
 Software as a service (SaaS) atau perangkat lunak berbentuk layanan adalah suatu model penyampaian aplikasi perangkat lunak oleh suatu vendor perangkat lunak yang mengembangkan aplikasi web yang diinangi dan dioperasikan (baik secara mandiri maupun melalui pihak ketiga) untuk digunakan oleh pelanggannya melalui Internet.
@@ -44,7 +44,7 @@ arsitektur cloud terbagi menjadi 4
 3. platform
 4. aplikasi,
 
-![arsitektur cloud](./2.PNG)
+![arsitektur cloud](./2.png)
 erdasarkan Gambar diatas, lapisan paling bawah adalah lapisan perangkat keras. Lapisan ini bertanggung jawab dalam pengelolaan sumber daya fisik dari cloud. Lapisan ini terdiri dari perangkat fisik seperti server, router, switch, power, dan sistem pendingin. Secara fisik, lapisan ini sering dikelompokkan sebagai pusat data (data center). Lapisan selanjutnya adalah lapisan infrastruktur. 
 
 Lapisan infrastruktur dikenal dengan lapisan virtualisasi dan bertanggung jawab untuk membentuk media yang terdiri dari media penyimpanan (storage) dan sumber daya komputasi yang terpartisi dari sumber daya fisiknya.
