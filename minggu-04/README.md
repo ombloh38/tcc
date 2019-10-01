@@ -6,7 +6,7 @@ Proses Bisnis sebagai Layanan (BPaaS) adalah setiap jenis proses bisnis horizont
 
 Istilah Business-as-a-Service berasal dari terminologi standar yang digunakan untuk menggambarkan berbagai tahap pengembangan dalam solusi cloud.
 
-# Karakteristik BPAaS:
+# Karakteristik BPAAS:
 
 1. BPaaS duduk di atas tiga layanan awan pendiri lainnya: SaaS, PaaS, dan IaaS.
 
@@ -47,8 +47,10 @@ menyediakan Layanan Bpaas :
 ![gartnerevent](./3.png)
 
 4. SugarCRM 
+
 (http://www.sugarcrm.com/) adalah aplikasi CRM yang katanya terbaik di lingkungan Open Source. SugarCRM dapat digunakan oleh berbagai perusahaan, dari mulai UKM hingga perusahaan besar. SugarCRM dapat dengan mudah beradaptasi pada berbagai lingkungan bisnis dengan menawarkan banyak fleksibilitas, alternatif biaya yang murah, hingga ke solusi propertiary atau berbayar.
 
 Dalam pengembangannya, SugarCRM melibatkan banyak narasumber. Dari mulai operator aplikasi CRM, para pelanggan, pengembang, dan para ahli.
 
-Mengimplementasikan CRM bukan sekedar terbatas di instalasi dimana anda tinggal pakai saja. Anda juga perlu upaya berkelanjutan untuk membangun statistik customer dari nol, hingga ke titik dimana anda dapat memanfaatkan data-datanya untuk mengatur strategi marketing and
+Mengimplementasikan CRM bukan sekedar terbatas di instalasi dimana anda tinggal pakai saja. Anda juga perlu upaya berkelanjutan untuk membangun statistik customer dari nol, hingga ke titik dimana anda dapat memanfaatkan data-datanya untuk mengatur strategi marketing
+![sugararm](./4.png)
