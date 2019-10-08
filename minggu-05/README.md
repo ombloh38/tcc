@@ -14,7 +14,7 @@ PS C:\Users\username> docker pull cockroachdb/cockroach:v19.1.5
 
 5. Keep up-to-date with CockroachDB releases and best practices:
 
-![install](./crock.PNG)
+![install](./crock.png)
 
 
 
