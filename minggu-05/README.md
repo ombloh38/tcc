@@ -14,16 +14,40 @@ PS C:\Users\username> docker pull cockroachdb/cockroach:v19.1.5
 
 5. Keep up-to-date with CockroachDB releases and best practices:
 
-![install](./crock.png)
-
 
 
 ### KONFIGURASI
 
+1. pertama jalankan perintah pull image
+![pull cockroachdb](./1.png)
+ disini karna sebelumnya sudah di install jadi tampilan seperti in jika belom pernah maka tampilan seperti in
+ ![awal](./crock.png)
+
+ 2. kemudian cek image apakah sudah terdownload 
+  ![wipro](./2.png)
+3.  kemudian jalankan container cockroachdb dan cek apa kah berjalan
+  ![wipro](./3.png)
+4. kemudian masuk ke container yang kita buat tadi
+
+![wipro](./4..png)
+
 ### MEMBUAT DATABASE
+membuat database dan menggunakan nya
+![wipro](./4.png)
+![wipro](./5A.png)
 
 ### MEMBUAT TABEL
+membuat table pada database tadi
+![wipro](./5.png)
+
 
 ### MENGISI DATA
+mengisi data pada table
+![wipro](./6.png)
 
-### QUERY DATA
+melihat table
+![wipro](./7.png)
+### MENGECEK PADA LOCALHOST KITA
+
+![wipro](./8.png)
+![wipro](./9.png)
