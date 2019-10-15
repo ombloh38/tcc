@@ -33,20 +33,25 @@ PS C:\Users\username> docker pull cockroachdb/cockroach:v19.1.5
 
 ### MEMBUAT DATABASE
 membuat database dan menggunakan nya
+
 ![wipro](./4.png)
 ![wipro](./5A.png)
 
 ### MEMBUAT TABEL
 membuat table pada database tadi
+
 ![wipro](./5.png)
 
 
 ### MENGISI DATA
 mengisi data pada table
+
 ![wipro](./6.png)
 
 melihat table
+
 ![wipro](./7.png)
+
 ### MENGECEK PADA LOCALHOST KITA
 
 ![wipro](./8.png)
