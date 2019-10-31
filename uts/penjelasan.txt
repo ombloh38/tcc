@@ -1,0 +1,2 @@
+FROM nginx :alpine (data dari sinidi copy
+COPY . /usr/share/nginx/html (untuk menampilkan file index html
