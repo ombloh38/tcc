@@ -45,8 +45,7 @@ b18 size: 5123
 
 lukmanPC@GATHOT-KOCO MINGW64 ~/Documents/tcc/minggu-08/FlaskApp (master)
 </pre>  
-3. Cek image di docker hub.     
-![9](images/1.png)  
+ 
 6. Menjalankan image menjadi container  `docker run -d -p 5000:80 --name=python-flask ombloh38/python-flask:v1` (windows --> virtualbox (port 5000)--> container flask (port 80))  
 <pre>
 lukmanPC@GATHOT-KOCO MINGW64 ~/Documents/tcc/minggu-08/FlaskApp (master)
