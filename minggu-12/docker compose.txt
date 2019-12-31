@@ -1,0 +1,10 @@
+Buat database baru 
+- create databases ombloh38;
+list database
+- \l
+buat password
+- create user fauzan with password 'ojan38';
+menghubungkan user ke database
+- grant all privileges on database ombloh38 to ombloh38;
+ dan tambahkan perintah ini
+- grant all privileges on database ombloh38 to ombloh38;

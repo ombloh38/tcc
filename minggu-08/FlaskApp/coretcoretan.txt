@@ -1,16 +1,7 @@
-# MINGGU 08   
-# PYTHON FT. FLASK 
 
-* Sebelum melakukan Perintah di bawah ini silahkan Buat terlebih dahulu file-file pendukung, di dalam file tersebut terdapat beberapa perintah yag harus di isikan. untuk file pendukung tersebut silahkan masuk ke Folder FlaskApp
-
-1. Jalankan Docker dan masuk ke root penyimpanan  
-<pre>
+Run 'docker COMMAND --help' for more information on a command.
 PS C:\Users\Student> cd .\Documents\
 PS C:\Users\Student\Documents> cd .\tcc\minggu-08\FlaskApp\
-</pre>  
-2. Membuat folder dasar untuk aplikasi Flask  
--- Step 1  
-<pre>
 PS C:\Users\Student\Documents\tcc\minggu-08\FlaskApp> mkdir -p app/static app/templates
 mkdir : A positional parameter cannot be found that accepts argument 'app/templates'.
 At line:1 char:1
@@ -18,83 +9,90 @@ At line:1 char:1
 + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : InvalidArgument: (:) [mkdir], ParameterBindingException
     + FullyQualifiedErrorId : PositionalParameterNotFound,mkdir
-</pre>  
--- Step 2  
-<pre>
+
 PS C:\Users\Student\Documents\tcc\minggu-08\FlaskApp> mkdir -p app/static
+
+
     Directory: C:\Users\Student\Documents\tcc\minggu-08\FlaskApp\app
+
+
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
 d-----       11/19/2019   8:40 PM                static
-</pre>  
--- Step 3  
-<pre>
+
+
 PS C:\Users\Student\Documents\tcc\minggu-08\FlaskApp> mkdir -p app/templates
 
+
     Directory: C:\Users\Student\Documents\tcc\minggu-08\FlaskApp\app
+
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
 d-----       11/19/2019   8:40 PM                templates
-</pre>  
 
-# Setting Up Docker  
 
-1. Buat Dockerfile, yang berisikan   
-<pre>
-FROM tiangolo/uwsgi-nginx-flask:python3.6-alpine3.7
-RUN apk --update add bash nano
-ENV STATIC_URL /static
-ENV STATIC_PATH /var/www/app/static
-COPY ./requirements.txt /var/www/requirements.txt
-RUN pip install -r /var/www/requirements.txt
-</pre> 
-2. Build images docker with command `docker build -t ombloh38/python-flask:v1 .`  
-<pre>
-$ docker build -t ombloh38/python-flask:v1 .
-Sending build context to Docker daemon  19.97kB
-Step 1/6 : FROM tiangolo/uwsgi-nginx-flask:python3.6-alpine3.7
- ---> c902fcf59a97
-Step 2/6 : RUN apk --update add bash nano
- ---> Using cache
- ---> b77a13c1c4c8
-Step 3/6 : ENV STATIC_URL /static
- ---> Using cache
- ---> 768682fac3ef
-Step 4/6 : ENV STATIC_PATH /var/www/app/static
- ---> Using cache
- ---> e44af29b3079
-Step 5/6 : COPY ./requirements.txt /var/www/requirements.txt
- ---> Using cache
- ---> 7c6decb581f8
-Step 6/6 : RUN pip install -r /var/www/requirements.txt
- ---> Using cache
- ---> 37c59c1d3ea1
-Successfully built 37c59c1d3ea1
-Successfully tagged ombloh38/python-flask:v1
-SECURITY WARNING: You are building a Docker image from Windows against a non-Win
-dows Docker host. All files and directories added to build context will have '-r
-wxr-xr-x' permissions. It is recommended to double check and reset permissions f
-or sensitive files and directories.
-</pre> 
-3. Cek image dengan perintah `docker images`  
-<pre>
-$ docker images
-REPOSITORY                   TAG                   IMAGE ID            CREATED
-           SIZE
-docker.test                  latest                37c59c1d3ea1        11 minute
-s ago      199MB
-ombloh38/python-flask        v1                    37c59c1d3ea1        11 minute
-s ago      199MB
-drupal                       latest                115c57355190        3 weeks a
-go         449MB
-postgres                     10                    1ba73c5b23e7        3 weeks a
-go         250MB
-tiangolo/uwsgi-nginx-flask   python3.6-alpine3.7   c902fcf59a97        2 months
-ago        189MB
-</pre>  
-4. jalankan perintah start.sh yang digunakan untuk menjalankan scrip docker build dan kemudian di run  
-<pre>
+PS C:\Users\Student\Documents\tcc\minggu-08\FlaskApp> start.sh
+Program 'start.sh' failed to run: Access is deniedAt line:1 char:1
++ start.sh
++ ~~~~~~~~.
+At line:1 char:1
++ start.sh
++ ~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [], ApplicationFailedException
+    + FullyQualifiedErrorId : NativeCommandFailed
+
+PS C:\Users\Student\Documents\tcc\minggu-08\FlaskApp> docker ps
+error during connect: Get http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.31/containers/json: open //./pipe/docker_engine: The
+system cannot find the file specified. In the default daemon configuration on Windows, the docker client must be run ele
+vated to connect. This error may also indicate that the docker daemon is not running.
+PS C:\Users\Student\Documents\tcc\minggu-08\FlaskApp> bash start.sh
+bash : The term 'bash' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ bash start.sh
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (bash:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Student\Documents\tcc\minggu-08\FlaskApp> start.sh
+Program 'start.sh' failed to run: Access is deniedAt line:1 char:1
++ start.sh
++ ~~~~~~~~.
+At line:1 char:1
++ start.sh
++ ~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [], ApplicationFailedException
+    + FullyQualifiedErrorId : NativeCommandFailed
+
+PS C:\Users\Student\Documents\tcc\minggu-08\FlaskApp> bash start.sh
+bash : The term 'bash' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ bash start.sh
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (bash:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Student\Documents\tcc\minggu-08\FlaskApp> docker ps
+error during connect: Get http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.31/containers/json: open //./pipe/docker_engine: The
+system cannot find the file specified. In the default daemon configuration on Windows, the docker client must be run ele
+vated to connect. This error may also indicate that the docker daemon is not running.
+PS C:\Users\Student\Documents\tcc\minggu-08\FlaskApp>
+
+
+
+LANJUTAN ORET-ORETAN
+
+
+Student@DESKTOP-B8ACH4F MINGW64 ~
+$ cd /c/Users/Student/Documents/tcc/minggu-08/FlaskApp/
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/tcc/minggu-08/FlaskApp (master)
+$ ls
+__init__.py  app/  coretcoretan.txt  Dockerfile  main.py  requirements.txt  start.sh*  uwsgi.ini  views.py
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/tcc/minggu-08/FlaskApp (master)
 $ ./start.sh
 Sending build context to Docker daemon  14.34kB
 Step 1/6 : FROM tiangolo/uwsgi-nginx-flask:python3.6-alpine3.7
@@ -167,14 +165,151 @@ Successfully built 35638d245317
 Successfully tagged docker.test:latest
 SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.
 3bfdda2dd3b365ca3e3df0e52c0ade80e8153dde632c3fcb475332ab507ba286
-</pre>  
-5. jalankan perintah docker ps digunakan untuk melihat container yang berjalan  
-<pre>
+
 Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/tcc/minggu-08/FlaskApp (master)
 $ docker ps
-CONTAINER ID        IMAGE                          COMMAND                  CREATED             STATUS              PORTS                           NAMES
-4687d1ec8264        ombloh38/python-flask:v1   "/entrypoint.sh /sta…"   2 minutes ago       Up 2 minutes        443/tcp, 0.0.0.0:5000->80/tcp   python-flask
-</pre>
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                            NAMES
+3bfdda2dd3b3        docker.test         "/entrypoint.sh /s..."   31 seconds ago      Up 31 seconds       443/tcp, 0.0.0.0:56733->80/tcp   docker.test
+
+Student@DESKTOP-B8ACH4F MINGW64 ~/Documents/tcc/minggu-08/FlaskApp (master)
+$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
